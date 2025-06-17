@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+
+  background: #22C1C3;
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+
+  background-attachment: fixed;
+  margin: 0;
+ 
+}
+
+
+.input-group label{
+
+    
+    text-shadow: 1px 1px 1px whitesmoke;
+}
+
+#form{
+   width: 400px;
+   margin: 10vh auto 0 auto;
+   background-color: aliceblue;
+   border-radius: 10px;
+   padding: 40px;
+   box-shadow: 0px 4px 15px black (0, 0, 0, 0.3);
+   animation: slideDown 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(-100px);
+   
+}
+
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#form label{
+
+    font-weight: bold;
+}
+
+#form h1{
+
+    text-align: center;
+    color:blue;
+    font-weight: bold;
+}
+
+.input-group{
+
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    
+}
+
+.input-group input{
+
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid  grey;
+}
+#form button{
+
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#form button:hover{
+
+    color: black;
+    background-color: aqua;
+    transform: scale(1.01);
+}
+
+.input-group .error{
+
+    color: red;
+    font-size: 15px;
+}
+
+.input-group input:focus{
+
+    outline: 0;
+}
+
+.input-group.success input{
+
+    border-color:rgb(26, 128, 0);
+}
+
+.input-group.error input{
+    border-color: red;
+}
